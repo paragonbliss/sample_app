@@ -54,8 +54,7 @@ describe "Static pages" do
     should_not have_selector 'title', text: full_title('Home')
     click_link "Sign up now!"
     should have_selector 'title', text: full_title('Sign Up')
-    click_link "Sample App"
-    should_not have_selector 'title', text: full_title('Home')
+
   	
   end
 
