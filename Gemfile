@@ -9,8 +9,6 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
-gem 'annotate', '2.5.0', group: :development
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -19,10 +17,13 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
+gem 'annotate', '2.5.0', group: :development
+
 gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '1.4.0'
 end
 
 group :production do
